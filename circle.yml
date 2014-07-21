@@ -1,0 +1,13 @@
+machine:
+  python:
+    version: 2.7.6
+
+checkout:
+  post:
+    - git clone git@github.com:qba73/nc.git
+
+test:
+  override:
+    - echo $TEST_PARAM_1
+    - echo $TEST_PARAM_2
+
